@@ -1,0 +1,45 @@
+h3 {
+    color: cadetblue;
+}
+a {
+    color: rgb(219, 126, 126);
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 15px;
+}
+h1{
+    color: blueviolet;
+    background-color: lightblue;
+}
+/* contoh selector atribut */
+input[type=submit] {
+    color: rgb(138, 62, 77);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightcoral;
+    border-radius: 10pt;
+}
+/* contoh selector class */
+.sosmed{
+    background-color: antiquewhite;
+    height: fit-content;
+}
+.hobi{
+    color: chartreuse;
+}
+/* contoh selector id */
+#title{
+    color: darkmagenta;
+    background-color: wheat;
+}
+/* }contoh pseudo element */
+#title::first-letter{
+    color: blue;
+    background-color: beige;
+}
+ /* contoh pseudo class */
+.formulir a:hover{
+    color: darkgrey;
+    font-size: large;
+}
