@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        h1{
+            color: blueviolet;
+            background-color: lightblue;
+        }
+        input[type=submit] {
+            color: rgb(138, 62, 77);
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lightcoral;
+            border-radius: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>ISI FORM UNTUK JADI TEMANKU</h1></center>
+    <form action="/proses_data.php" method="post">
+         <table>
+                <tr>
+                    <td><label for="nama">Nama lengkap</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" id="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="perempuan">Perempuan
+                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="laki - laki">Laki - laki </td>
+                </tr>
+                <tr>
+                    <td><label for="asal_kota">Asal kota</label></td>
+                    <td>:</td>
+                    <td><select name="asal_kota" id="asal_kota" required>
+                        <option value=""> -- Pilih -- </option>
+                        <option value="Purwokerto">Purwokerto</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Aceh">Aceh</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="hobi">Hobi</label></td>
+                    <td>:</td>
+                    <td><input type="checkbox" name="hobi" id="hobi" value="Membaca">Membaca
+                        <input type="checkbox" name="hobi" id="hobi" value="Bernyanyi">Bernyanyi
+                        <input type="checkbox" name="hobi" id="hobi" value="Bermain">Bermain
+                        <input type="checkbox" name="hobi" id="hobi" value="Game">Game
+                        <input type="checkbox" name="hobi" id="hobi" value="Memasak">Memasak</td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat</label></td>
+                    <td>:</td>
+                    <td><textarea name="alamat" id="alamat" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <center><input type="submit" name="" id="" value="SUBMIT"></center>
+                    </td>
+                </tr>
+         </table>
+</body>
+</html>

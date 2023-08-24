@@ -1,0 +1,13 @@
+
+perintah untuk pertama kali upload / push ke reposity
+
+1. git ini -> digunakan untuk menginisiasi folder tersebut
+2. git commit -m "pesanmu" -> memberikaan pesan/informasi apapun yang di upload
+3. git remote add origin https://github.com/
+4. git add . -> digunakan untuk menandakan kita akan upload semua file dan perubahan2 ke branch = master
+
+perintah untuk push/upload/update file baru/perubahan pada folder yang sudah terhubung dengan repository
+1. git status -> melihat perubahan2 yang terjadi 
+2. git add . -> digunakan untuk menandakan kita akan upload semua file dan perubahan2 yang terjadi
+3. git commit -m "pesanmu" -> memberikan pesan/informasi apapun yang di upload
+4. git add . -> digunakan untuk menandakan kita akan upload semua file dan perubahan2 ke branch = master

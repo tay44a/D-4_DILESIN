@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <h1>FORMULIR PENDAFTARAN</h1>
+    <!-- 
+        Tag form digunakan untuk membuat formulir
+        action untuk tujuan proses data selanjutnya
+        methode adalah jenis prosesnya (post/get)
+     -->
+    <form action="/proses_data.php" method="post">
+        <!-- 
+            tag input untuk membuat input box
+            type = text digunakan untuk input teks biasa yang pendek
+            name adalah variable yang akan dibaca oleh proses selanjutnya
+            id adalah variable untuk inisiasi
+            required untuk menunjukkan bahwa input tersebuat bersifat wajib diisi
+            place holder untuk memberikan arahan atau contoh isian
+         -->
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" required placeholder="Nama lengkap">
+        <br>
+        <!-- 
+            type = email digunakan untuk input jenis email sehingga inputan wajib ada @
+         -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <!-- 
+            type = password digunakan untuk input password sehingga ketika diketik tidak muncul teks
+         -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <!-- 
+            type = radio digunakan untuk biasanya untuk  jenis kelamin
+            value = data yang disimpan ke data base
+         -->
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="perempuan">Perempuan
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="laki - laki">Laki - laki 
+        <br>
+        <!-- 
+            type = radio digunakan untuk input pilihan banayak
+         -->
+        <label for="asal_kota">Asal kota</label>
+        <select name="asal_kota" id="asal_kota" required>
+            <option value=""> -- Pilih -- </option>
+            <option value="Purwokerto">Purwokerto</option>
+            <option value="Bali">Bali</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Aceh">Aceh</option>
+        </select>
+        <!-- 
+            type = checkbox digunakan untuk input yang bisa di ceklis banyak
+         -->
+        <br>
+        <label for="hobi">Hobi</label>
+        <input type="checkbox" name="hobi" id="hobi" value="Membaca">Membaca
+        <input type="checkbox" name="hobi" id="hobi" value="Bernyanyi">Bernyanyi
+        <input type="checkbox" name="hobi" id="hobi" value="Bermain">Bermain
+        <input type="checkbox" name="hobi" id="hobi" value="Game">Game
+        <input type="checkbox" name="hobi" id="hobi" value="Memasak">Memasak
+        <br>
+        <!-- 
+            text area digunakan untuk input teks yang panjang
+         -->
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+        <br>
+        <!-- 
+            <button>submit<button>
+         -->
+        <input type="submit" name="" id="" value="SUBMIT">
+
+</body>
+</html>
